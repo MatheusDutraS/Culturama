@@ -1,0 +1,151 @@
+/* Cabeçalho */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 33px;
+}
+
+
+/* Categorias */
+.categorias__lista {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.categorias__item {
+    width: 100%;
+}
+
+
+/* Destaques */
+.destaques {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.destaques__barra {
+    flex-grow: 1;
+}
+
+
+/* Eventos  */
+.eventos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.eventos__item {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+.eventos__botao {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Agenda */
+.agenda__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.agenda__item {
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+.agenda__botao {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Rodapé */
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+
+.rodape__logo {
+    align-self: flex-end;
+}
+
+@media screen and (min-width: 720px) {
+    /* Cabeçalho */
+    .menu {
+        column-gap: 75px;
+    }
+
+
+    /* Categorias */
+    .categorias__lista {
+        flex-wrap: wrap;
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+    }
+
+    .categorias__item {
+        width: calc(50% - 0.75rem);
+    }
+
+    .destaques {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    /* Eventos  */
+    .eventos__lista {
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+    }
+
+    .eventos__botao {
+        text-align: end;
+    }
+
+
+    /* Agenda */
+    .agenda__lista {
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+    }
+
+    .agenda__botao {
+        text-align: end;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    /* Cabeçalho */
+    .menu {
+      column-gap: 102px;
+    }
+
+    .menu__item:nth-child(1) {
+        order: 1;
+    }
+    .menu__item:nth-child(5) {
+        order: 2;
+    }
+
+    .menu__item:nth-child(2),
+    .menu__item:nth-child(3),
+    .menu__item:nth-child(4) {
+        order: 3;
+    }
+}
